@@ -104,7 +104,7 @@ def sum(item):
     sum = 0
 
     for i in item:
-        sum += i["item_price"]
+        sum += i["Item_price"]
 
     return sum
 
@@ -112,7 +112,7 @@ def make_receipt(item, receipt):
 
     for i in item:
         receipt += f"""
-        \t{i["item_name"]} -- {i['item_price']}
+        \t{i["Item_name"]} -- {i['Item_price']}
         """
 
     receipt += f"""
