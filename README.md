@@ -84,7 +84,7 @@ def vending_machine(items_in_stock, run, item):
         if brought_item < len(items_in_stock):
             item.append(items_in_stock[brought_item])
         else:
-            print("The PRODUCT ID is wrong.")
+            print("The PRODUCT ID is invalid.")
 
         more_than_one_item = str(input("PRESS ANY KEY TO ADD MORE ITEMS AND PRESS Q TO QUIT. "))
 
