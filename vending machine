@@ -1,0 +1,55 @@
+items = [
+    {
+        "Item_id": 0,
+        "Item_name": "Toblerone",
+        'Item_price': 9
+    },
+    {
+        "Item_id": 1,
+        "Item_name": "Coke-Cola",
+        'Item_price': 4 
+    },
+    {
+        "Item_id": 2,
+        "Item_name": "Lays-Salted",
+        'Item_price': 1 
+    },
+    {
+        "Item_id": 3,
+        "Item_name": "Lays-Chilli",
+        'Item_price': 2 
+    }
+]
+print("Welcome to Julisha's coding machine")
+
+for i in items:
+    print(f"Product: {i['Item_name']} -- Price: {i['Item_price']} -- Product ID: {i['Item_id']}")
+
+print("Type a item ID to continue...")
+
+user_id=int(input("Enter the Item_id: "))
+
+if user_id == 0:
+    print("You have selected Toblerone.You have to pay 9 AED")
+elif user_id == 1:
+    print("You have selected Coke-Cola. You have to pay 2 AED")
+elif user_id == 2:
+    print("You have selected Lays-Salted. You have to pay 1 AED")
+elif user_id ==3:
+    print("You have selected Lays-Chilli. You have to pay 2 AED")
+else:
+    print("INVALID CODE")
+
+cart=[]
+user_money=int(input("Insert the money into vending machine:"))
+for i in items:
+  if user_id==i['Item_id']:
+    cart.append(i)
+def vendingmachine():
+    for i in cart:
+      price=i['Item_price']
+      if user_money==price:
+        print('thank you') 
+      else:
+        print("Change received", user_money - price)
+vendingmachine() 
