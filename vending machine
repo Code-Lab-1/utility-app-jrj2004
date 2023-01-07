@@ -20,7 +20,7 @@ items = [
         'Item_price': 2 
     }
 ]
-print("Welcome to Julisha's coding machine")
+print("Welcome to Julisha's vending machine")
 
 for i in items:
     print(f"Product: {i['Item_name']} -- Price: {i['Item_price']} -- Product ID: {i['Item_id']}")
